@@ -1,0 +1,165 @@
+.contactForm {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  background-color: #13c5dd;
+  padding-bottom: 30px;
+}
+
+.form__caption {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__caption p {
+  font-weight: 700;
+  font-family: "Roboto Condensed",sans-serif;
+  font-size: 25px;
+  color: #09294e;
+    margin-top: 20px;
+}
+
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.formInput {
+  width: 100% !important;
+  display: flex;
+  flex: 1;
+  position: relative;
+  margin: 10px !important;
+  border: 1px solid #0f79f3;
+  border-radius: 7px;
+}
+
+.serviceInputBox {
+  width: 100% !important;
+  border: 1px solid  #0f79f3;
+  border-radius: 7px;
+}
+
+.button__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 !important;
+}
+
+.button {
+  background-color: #09294e !important;
+  color: #fff !important;
+  height: 50px;
+  width: 70% !important;
+  text-transform: initial !important;
+  font-size: 20px !important;
+  border-radius: 7px !important;
+  margin-top: 20px;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: #13c5dd;
+  padding: 10px 0px 20px 20px;
+  padding-bottom: 50px;
+}
+
+.subTitle {
+  color: #09294e;
+  margin: 10px 0 30px 0;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+.bookText {
+  margin-bottom: 50px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ourContacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: double underline;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button:first-child {
+  background-color: #09294e !important;
+  color: white !important;
+  border-radius: 25px !important;
+  height: 55px !important;
+  width: 160px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  font-size: 17px !important;
+}
+.buttons button:last-child {
+  font-size: 17px !important;
+  text-transform: capitalize !important;
+  background-color: transparent !important;
+  color: #09294e !important;
+  border: 1px solid #09294e !important;
+  border-radius: 25px !important;
+  height: 55px !important;
+  width: 160px !important;
+  font-weight: 600 !important;
+  margin-left: 20px !important;
+}
+@media screen and (min-width: 580px) {
+    .form{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 720px) {
+
+.contactForm {
+    flex-direction: row;
+    padding: 40px 0;
+  }
+
+  .contactUs {
+    width: 50%;
+    margin: 50px 20px 0px 20px;
+    border-radius: 20px;
+    padding: 0 40px;
+    padding-bottom: 50px;
+  }
+
+  .form__container {
+    width: 50%;
+    height: fit-content;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

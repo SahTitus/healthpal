@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.gyaso.com
+
+# Sitemaps
+Sitemap: https://www.gyaso.com/sitemap.xml

@@ -1,0 +1,76 @@
+.card {
+    display: flex;
+    width: 90%;
+   flex-direction: column;
+    background-color: #fff;
+    /* height: 100px; */
+    border-radius: 7px;
+    color: #000;
+}
+
+.top__container{
+    display: flex;
+    justify-content: space-around;
+    color: #062446;
+    align-items: center;
+    padding: 20px;
+}
+
+.book_now {
+    border: 1px solid rgb(76, 194, 202);
+    border-radius: 5px; 
+    text-transform: initial !important;
+    font-size: 17px;
+    color: #062446;
+    padding: 7px;
+    height: 40px;
+    transition: ease-in-out;
+    background-color: aqua !important;
+  }
+
+  .hr {
+    height: 1px ;
+    border: none;
+    background-color: gray;
+    margin: 10px 0;
+  }
+
+  .bottom__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .items{
+    display: flex;
+  }
+  .item__card{
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .item__card span{
+    color: rgb(80, 81, 83);
+  }
+  .item__card p{
+    color: rgb(255, 0, 221);
+  }
+
+  .icon__container{
+    background-color: rgb(124, 221, 221);
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .icon{
+font-size: 25px;
+  }

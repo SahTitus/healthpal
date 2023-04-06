@@ -1,0 +1,157 @@
+.navbar {
+  margin-top: 20px;
+  position: absolute;
+  display: flex;
+  width: 90%;
+  z-index: 10000;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  color: #062446;
+  background: #10d3b2;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  padding: 0 30px;
+}
+
+.icon{
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+}
+
+.logo__img {
+  position: absolute;
+  object-fit: contain;
+  width: 80px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+
+.nav__righBtns {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a,
+.menu__listItem {
+  display: flex;
+  color: #fff;
+  position: relative;
+  align-items: center;
+  list-style: none;
+  font-weight: 550;
+  line-height: 44px;
+  margin: 0 10px !important;
+  font-size: 1.05rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.listItem__row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.menu a:hover,
+.menu__listItem:hover {
+  color: rgb(178, 223, 223);
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: 600ms ease-in-out;
+}
+
+.book_now {
+  border: 1px solid rgb(76, 194, 202);
+  border-radius: 5px;
+  text-transform: initial !important;
+  font-size: 17px;
+  color: #062446;
+  padding: 7px;
+  transition: ease-in-out;
+  background-color: #fff;
+}
+
+.book_now:hover {
+  background-color: rgb(195, 226, 221) !important;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .book_now {
+    display: none;
+  }
+  .icon{
+    display: flex;
+  }
+
+  .menu {
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border-radius: 7px;
+    height: 0px;
+    transition: 700ms ease-in-out;
+    overflow: hidden;
+    background-color: #09294e;
+    visibility: hidden;
+    color: #ebe8e8;
+    font-size: 1.08rem;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 20px 30px;
+    width: 80%;
+  }
+
+  .showSidebar {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #3a3f41;
+    height: 35vh;
+    transition: height 0.3333s ease-in-out;
+    overflow: hidden;
+    visibility: visible;
+  }
+
+  .menu a,
+  .menu__listItem {
+    width: 100%;
+    margin: 0;
+  }
+  .menu a:hover,
+  .menu__listItem:hover {
+    color: gray;
+    cursor: pointer;
+    transform: none;
+    transition: none;
+  }
+}

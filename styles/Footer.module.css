@@ -1,0 +1,128 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #302f2d;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: column;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* padding: 20px; */
+}
+
+.footer__links p {
+  font-weight: 700;
+  margin:10px;
+}
+.footer__workHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.hrs__title{
+    font-size: 1.2rem;
+}
+.schedule{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.schedule p{
+    margin: 6px 0;
+    font-size: 17px;
+}
+
+.footer__followUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.footer__followUs p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 30px 0;
+}
+
+.footer__followUsIcon {
+  font-size: 30px !important;
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+}
+
+.footer__followUsOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.footer__contactUs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title p {
+  margin-left: 20;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  margin: 35px 0;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.footer__contactUs p {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact__option p{
+    font-size: 18px !important;
+    font-weight: 4 !important;
+    margin:6px 20px;
+    font-size: 1px;
+    font-weight: 00;
+}
+
+.footer__copyright {
+  background-color: #242322;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.footer__copyright p {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 720px) {
+  .footer__wrapper {
+    flex-direction: row;
+  }
+}
