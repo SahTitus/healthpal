@@ -59,6 +59,14 @@
 }
 
 
+@media screen and (max-width:540px){
+  .bannerContent {
+
+    margin-top:-20px !important;
+
+  }
+  
+}
 @media screen and (max-width:720px){
   .bannerContent {
     justify-content: flex-start;

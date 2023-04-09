@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  color: rgb(255, 255, 255);
   width: 100%;
 }
 .footer__wrapper {
@@ -23,31 +23,36 @@
   flex-direction: column;
   justify-content: space-evenly;
   /* padding: 20px; */
+  color: rgb(255, 255, 255);
 }
 
 .footer__links p {
   font-weight: 700;
   margin:10px;
+  color: rgb(255, 255, 255);
 }
 .footer__workHours {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .hrs__title{
     font-size: 1.2rem;
+    color: rgb(255, 255, 255);
 }
 .schedule{
     display: flex;
     flex-direction: column;
-  
+    color: rgb(255, 255, 255);
 }
 
 .schedule p{
     margin: 6px 0;
     font-size: 17px;
+    color: rgb(255, 255, 255);
 }
 
 .footer__followUs {
@@ -62,6 +67,7 @@
   font-weight: 700;
   font-size: 1.2rem;
   margin: 30px 0;
+  color: rgb(255, 255, 255);
 }
 
 .footer__followUsIcon {
@@ -75,12 +81,14 @@
   flex-direction: row;
   justify-content: space-between;
   width: 40%;
+  color: rgb(255, 255, 255);
 }
 
 .footer__contactUs {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  color: rgb(255, 255, 255);
 }
 
 .title p {
@@ -91,12 +99,14 @@
   margin: 35px 0;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 .footer__contactUs p {
   margin-left: 20px;
   font-size: 18px;
   font-weight: 700;
+  color: rgb(255, 255, 255);
 }
 
 .contact__option p{
@@ -105,6 +115,7 @@
     margin:6px 20px;
     font-size: 1px;
     font-weight: 00;
+    color: rgb(255, 255, 255);
 }
 
 .footer__copyright {
@@ -114,10 +125,12 @@
   align-items: center;
   margin-top: 16px;
   width: 100%;
+  color: rgb(255, 255, 255);
 }
 
 .footer__copyright p {
   font-size: 14px;
+  color: rgb(255, 255, 255);
   margin-left: 10px;
 }
 

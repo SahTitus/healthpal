@@ -65,7 +65,7 @@ const HelloCard = () => {
       </div>
 
       <div className={styles.bottom}>
-        <div className={styles.btm__caption}>Stay connected! 👉</div>
+        <div className={styles.btm__caption}>Stay connected! </div>
         <div className={styles.btm__followUsOption}>
           <Facebook className={styles.btm__followUsIcon} />
           <Instagram className={styles.btm__followUsIcon} />

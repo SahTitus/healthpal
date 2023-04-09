@@ -110,7 +110,7 @@
     background-color: #fff;
   }
   .book_now {
-    display: none;
+    display: none !important;
   }
   .icon{
     display: flex;
