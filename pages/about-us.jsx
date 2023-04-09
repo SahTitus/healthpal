@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/About.module.css";
 import CoreValuesSection from "../components/CoreValuesSectio";
+import { BookingForm, Services, Whyus } from "../components";
+import HelloCard from "../components/HelloCard";
 
 const About = () => {
   return (
@@ -32,27 +34,15 @@ const About = () => {
           </p>
         </div>
         <CoreValuesSection />
-        <div className={styles.whyUs}>
-          <p className={styles.whyUsCaption}>Why Choose Us</p>
-          <div className={styles.why__usOptions}>
-            <div className={styles.why__usOption}>
-              <p>Free</p>
-              <span>Ambulance</span>
-            </div>
-            <div className={styles.why__usOption}>
-              <p>Accurate</p>
-              <span>Testing</span>
-            </div>
-            <div className={styles.why__usOption}>
-              <p>Emergency</p>
-              <span>Services</span>
-            </div>
-            <div className={styles.why__usOption}>
-              <p>Qualified</p>
-              <span>Doctors</span>
-            </div>
-          </div>
-        </div>
+        <HelloCard />
+    <Services />
+    <br />
+    <br />
+    <Whyus />
+    <br />
+    <br />
+    <br />
+    <BookingForm />
       
       </div>
     </>

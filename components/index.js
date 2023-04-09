@@ -5,3 +5,4 @@ export { default as ServiceCard } from './ServiceCard';
 export { default as DoctorCard } from './DoctorCard';
 export { default as Doctors } from './Doctors';
 export { default as Services } from './Services';
+export { default as Whyus } from './Whyus';

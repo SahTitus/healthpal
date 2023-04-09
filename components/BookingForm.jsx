@@ -91,15 +91,14 @@ const BookingForm = ({ hide }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
             temporibus fuga eius ex, quam iure saepe officia tenetur tempora,
             rem blanditiis quos maiores quis ipsum neque ducimus magni suscipit
-            maxime.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            temporibus fuga eius ex, quam iure saepe officia tenetur tempora,
-            rem blanditiis quos maiores quis ipsum neque ducimus magni suscipit
-            maxime.
+            maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Amet temporibus fuga eius ex, quam iure saepe officia tenetur
+            tempora, rem blanditiis quos maiores quis ipsum neque ducimus magni
+            suscipit maxime.
           </p>
         </div>
         <div className={styles.buttons}>
-          <Button>Find Doctor</Button>
+          <Button>Talk to Us</Button>
           <Button>Read More</Button>
         </div>
       </div>
@@ -142,10 +141,9 @@ const BookingForm = ({ hide }) => {
                 value={formData.email}
               />
             </Box>
-            
           </div>
           <div>
-          <Box
+            <Box
               id={styles.formInputBox}
               sx={{ display: "flex", alignItems: "flex-end" }}
             >

@@ -1,6 +1,7 @@
 import Head from "next/head";
 // import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Layout({ children }) {
 
@@ -18,9 +19,9 @@ function Layout({ children }) {
       <main className={`main`}>{children}</main>
 
 
-        {/* <footer className="footer">
+        <footer className="footer">
           <Footer />
-        </footer> */}
+        </footer>
   
     </div>
   );

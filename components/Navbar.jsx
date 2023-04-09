@@ -6,9 +6,9 @@ import { useState } from "react";
 import Link from "next/link";
 import logo from "../Images/logo.png";
 import Image from "next/image";
+// import { useRouter } from "next/router";
 
 function Navbar() {
-  const [show, setShow] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   const [showServices, setShowServices] = useState(false);
 
@@ -17,8 +17,11 @@ function Navbar() {
     setShowSidebar(!showSidebar);
   };
 
+  // const router = useRouter();
+  // const changeNavColor=router.pathname==="/about-us"
+
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} `}>
       <Link  aria-label="Home" href="/">
         <div className={styles.logo}>
           <Image
@@ -47,7 +50,7 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link  aria-label="contact us" href="/contact" className={styles.menu__listItem}>
+          <Link  aria-label="contact us" href="/contact-us" className={styles.menu__listItem}>
             <div className={styles.menu__listItem} onClick={closeSidebar}>
               {" "}
               Contact Us
