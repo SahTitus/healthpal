@@ -183,15 +183,15 @@ const BookingForm = ({ hide }) => {
                   value={formData.service}
                   onChange={handleChange}
                 >
-                  <MenuItem value=" Web Development ">Web Development</MenuItem>
-                  <MenuItem value="Mobile  Development">
-                    Mobile Development
+                  <MenuItem value=" Diagnostic imaging ">Diagnostic imaging</MenuItem>
+                  <MenuItem value="Emergency services">
+                  Emergency services
                   </MenuItem>
-                  <MenuItem value="Ecommerce  Development">
-                    Ecommerce Development
+                  <MenuItem value="Mental health">
+                  Mental health
                   </MenuItem>
-                  <MenuItem value="Convert a Website to Mobile App">
-                    Convert a Website to Mobile App{" "}
+                  <MenuItem value="Surgery">
+                   Surgery{" "}
                   </MenuItem>
                 </Select>
               </FormControl>
