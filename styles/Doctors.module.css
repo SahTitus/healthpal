@@ -5,20 +5,23 @@
   background-color: #fff;
   width: 100%;
 }
+
 .doctors {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
-.carousel{
-  height: 430px;
+.carousel {
+  display: flex;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .div__title {
@@ -26,7 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px;
 }
 
 .div__title p {
@@ -36,6 +38,7 @@
   font-size: 25px;
   border-bottom: solid 5px #179db4;
 }
+
 .div__title span {
   font-family: "Roboto Condensed", sans-serif;
   color: #09294e;
@@ -62,11 +65,12 @@
   flex-direction: column;
   min-width: 260px;
   max-width: 500px;
-  background-color: #eff5f9;
+  background-color: #fbfeff;
   border-radius: 5px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin: 20px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .doctor__card:hover {
@@ -105,12 +109,14 @@
   flex-direction: column;
   padding: 20px;
 }
+
 .doc__details p {
   font-weight: 700;
   font-family: "Roboto Condensed", sans-serif;
   color: #09294e;
   font-size: 23px;
 }
+
 .doc__details span {
   font-weight: 600;
   font-family: "Roboto Condensed", sans-serif;
@@ -123,7 +129,6 @@
   color: rgb(168, 164, 164) !important;
   font-style: normal !important;
   margin-top: 20px !important;
-  /* font-weight: bold !important; */
 }
 
 .social__handles {
@@ -152,6 +157,7 @@
   .image__container {
     height: fit-content;
   }
+
   .doc__image {
     height: 300px;
   }
@@ -161,29 +167,52 @@
   .doctor__card {
     display: flex;
     flex-direction: row;
-    min-width: 260px;
-    max-width: 300px;
-
+    min-width: 300px;
+    /* max-width: 500px; */
   }
+
   .image__container {
     height: 380px;
-    width: 100%;
+    width: 700px;
     border-top-right-radius: 0;
     border-top-left-radius: 20px;
   }
-  
+
   .doc__image {
     border-top-right-radius: 0;
   }
+
   .doc__details {
     justify-content: center;
- flex: 0.95;
+    flex: 0.95;
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 710px) {
   .div__title span {
     width: 300px;
     text-align: center;
+  }
+
+  .doctor__card {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 830px) and (max-width:1030px) {
+  .div__title span {
+    width: 300px;
+    text-align: center;
+  }
+
+  .doctor__card {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+
+  .doctor__card {
+    width: 560px;
   }
 }

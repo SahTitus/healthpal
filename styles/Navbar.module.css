@@ -27,8 +27,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65px;
-  width: 65px;
+  height: 53px;
+  width: 53px;
   border-radius: 50%;
   position: relative;
   background: #fff;
@@ -39,6 +39,12 @@
   position: absolute;
   object-fit: contain;
   width: 80px;
+}
+
+.logo p{
+font-size: 17px;
+font-weight: 700;
+color: rgb(180, 57, 36);
 }
 
 .icon {

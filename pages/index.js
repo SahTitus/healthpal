@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import {BookingForm, Doctors, Services } from '../components'
+import { BookingForm, Doctors, Services } from '../components'
 import CoreValuesSection from '../components/CoreValuesSectio'
 import LandingBanner from '../components/LandingBanner'
 
@@ -22,12 +21,12 @@ export default function Home() {
         <LandingBanner />
         <Services />
         <Doctors />
-        <BookingForm />
+        <div> <BookingForm /></div>
         <br />
         <br />
         <br />
         <CoreValuesSection />
-       
+
       </main>
     </>
   )

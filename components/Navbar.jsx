@@ -17,40 +17,50 @@ function Navbar() {
     setShowSidebar(!showSidebar);
   };
 
-  // const router = useRouter();
-  // const changeNavColor=router.pathname==="/about-us"
-
   return (
     <div className={`${styles.navbar} `}>
-      <Link  aria-label="Home" href="/">
+      <Link aria-label="Home" href="/">
         <div className={styles.logo}>
-          <Image
+          {/* <Image
             className={styles.logo__img}
             alt="gyaso logo"
             src={logo}
-          />
+          /> */}
+      <p>SYO</p>
         </div>
       </Link>
       <div className={styles.nav__right}>
         <ul className={`${styles.menu} ${showSidebar && styles.showSidebar}`}>
-          <Link  aria-label="Home" href="/" className={styles.menu__listItem}>
+          <Link aria-label="Home" href="/" className={styles.menu__listItem}>
             <div className={styles.menu__listItem} onClick={closeSidebar}>
               Home
             </div>
           </Link>
-          <Link  aria-label="services" href="/services" className={styles.menu__listItem}>
+          <Link
+            aria-label="services"
+            href="/services"
+            className={styles.menu__listItem}
+          >
             <div className={styles.menu__listItem} onClick={closeSidebar}>
               Services
             </div>
           </Link>
 
-          <Link  aria-label="about us" href="/about-us" className={styles.menu__listItem}>
+          <Link
+            aria-label="about us"
+            href="/about-us"
+            className={styles.menu__listItem}
+          >
             <div className={styles.menu__listItem} onClick={closeSidebar}>
               About us
             </div>
           </Link>
 
-          <Link  aria-label="contact us" href="/contact-us" className={styles.menu__listItem}>
+          <Link
+            aria-label="contact us"
+            href="/contact-us"
+            className={styles.menu__listItem}
+          >
             <div className={styles.menu__listItem} onClick={closeSidebar}>
               {" "}
               Contact Us
@@ -59,7 +69,7 @@ function Navbar() {
         </ul>
 
         <div className={styles.nav__righBtns}>
-          <Link href="/contact "  aria-label="Book now">
+          <Link href="/contact " aria-label="Book now">
             <Button className={styles.book_now} type="button">
               Book now
             </Button>

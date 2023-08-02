@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "../styles/Doctors.module.css";
 import blog2 from "../Images/blog2.jpg";
+import blog1 from "../Images/blog1.jpg";
 
 const DoctorCard = ({ title, name, img }) => {
   return (
@@ -10,7 +11,7 @@ const DoctorCard = ({ title, name, img }) => {
       <div className={styles.image__container}>
         <Image
           className={styles.doc__image}
-          src={img}
+          src={blog1}
           alt="Doc1"
           // width={200}
           // height={300}
@@ -19,7 +20,7 @@ const DoctorCard = ({ title, name, img }) => {
       <div className={styles.doc__info}>
         <div className={styles.doc__details}>
           <p>{name}</p>
-          <span>{title}</span>
+        <span>{title}</span>
           <span className={styles.doc__desc}>
             Lorem, ipsum dolor sit amet di beatae! i officiis ullam autem
             repellat sapiente.

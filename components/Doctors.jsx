@@ -1,23 +1,46 @@
 import React from "react";
 import DoctorCard from "./DoctorCard";
 import styles from "../styles/Doctors.module.css";
-import { HealthAndSafety } from "@mui/icons-material";
-import Carousel from "./Carousel";
-import { Reveal } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import blog2 from "../Images/blog2.jpg";
+import blog1 from "../Images/blog1.jpg";
+import "slick-carousel/slick/slick-theme.css";
 
-const fadeInUp = keyframes`
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-`;
+const settings = {
+  dots: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  infinite: true,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
+const doctors = [
+  {
+    id: 1,
+    name: "Dr. John Smith",
+    specialty: "Cardiology",
+    image: blog2,
+  },
+  {
+    id: 2,
+    name: "Dr. Jane Doe",
+    specialty: "Oncology",
+    image: blog2,
+  },
+  // Add more doctors as needed
+];
 
 const Doctors = () => {
   return (
@@ -27,21 +50,14 @@ const Doctors = () => {
         <span>Excellent Medical Doctors</span>
       </div>
       <div className={styles.doctors}>
-        {/* {services.map((service, i) => ( */}
-
         <div className={styles.carousel}>
-          <Reveal
-            className="onStep"
-            keyframes={fadeInUp}
-            delay={300}
-            duration={600}
-            triggerOnce
-          >
-        
-            <Carousel />
-          </Reveal>
+          <Slider {...settings}>
+            <DoctorCard name="Doc. Sah Titus" title="Medical Doctor" />
+            <DoctorCard name="Hon Kong" title="Surgical Doctor" />
+            <DoctorCard name="Isaa Gin" title="Medical Doctor" />
+            <DoctorCard name="Doc. Sah Titus" title="Medical Doctor" />
+          </Slider>
         </div>
-        {/* ))} */}
       </div>
     </div>
   );

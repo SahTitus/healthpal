@@ -183,15 +183,18 @@ const BookingForm = ({ hide }) => {
                   value={formData.service}
                   onChange={handleChange}
                 >
-                  <MenuItem value=" Diagnostic imaging ">Diagnostic imaging</MenuItem>
-                  <MenuItem value="Emergency services">
-                  Emergency services
+                  <MenuItem value="X-Ray ">X-Ray</MenuItem>
+                  <MenuItem value="CT Scan">CT Scan</MenuItem>
+                  <MenuItem value="Ultrasound">Ultrasound</MenuItem>
+                  <MenuItem value="Mammography">Mammography </MenuItem>
+                  <MenuItem value="Endoscopy">Endoscopy</MenuItem>
+                  <MenuItem value="ECG">ECG</MenuItem>
+                  <MenuItem value="DNA Test">DNA Test</MenuItem>
+                  <MenuItem value="Medical Lab & Pathology">
+                    Medical Lab & Pathology
                   </MenuItem>
-                  <MenuItem value="Mental health">
-                  Mental health
-                  </MenuItem>
-                  <MenuItem value="Surgery">
-                   Surgery{" "}
+                  <MenuItem value="Routine Medical Checkup">
+                    Routine Medical Checkup
                   </MenuItem>
                 </Select>
               </FormControl>

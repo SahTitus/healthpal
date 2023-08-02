@@ -9,7 +9,7 @@ const LandingBanner = () => {
       </div>
       <div className={styles.bannerContent}>
         <h1>Stay Healthy, Stay Happy!</h1>
-        <p>Get the latest health information and expert advice</p>
+        <p>Get the advanced health services and expert advice</p>
         <p className={styles.button}>Learn More</p>
       </div>
     </div>

@@ -35,7 +35,6 @@ a {
 } */
 
 .services {
-  /* margin-top: 50px; */
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -49,11 +48,26 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
+
 }
 
 .services__title p {
   width: 90%;
   border-bottom: 3px dotted #ccc;
+}
+
+/* Dots */
+
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: rgb(45, 236, 236) !important;
+}
+
+.slick-initialized .slick-slide{
+  display: flex !important;
+  justify-content: center !important;
 }
 
 @media (prefers-color-scheme: dark) {

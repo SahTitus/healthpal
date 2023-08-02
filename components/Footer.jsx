@@ -7,7 +7,7 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.title}>
         {" "}
-        <p>Healthpal</p>
+        <p>SYO</p>
       </div>
       <div className={styles.footer__wrapper}>
         <div className={styles.footer__links}>
@@ -65,7 +65,7 @@ function Footer() {
             href="https://goo.gl/maps/5YtdZYvJo7zXmkkq7"
             className={styles.contact__option}
           >
-            <p>Sunyani, Bono Region, Ghana </p>
+            <p>Fiapre, Sunyani, Bono Region, Ghana </p>
           </a>
         </div>
       </div>
